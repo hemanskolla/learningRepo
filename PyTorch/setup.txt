@@ -1,0 +1,34 @@
+Setup Documentation:
+
+First, I downloaded Anaconda onto my Windows device via the following link:
+	https://docs.anaconda.com/free/anaconda/install/windows/
+
+Jupyter Notebook should be available to launch from the Anaconda Navigator. If it is not, click 'Install'.
+
+Then, I needed to download all of the following:
+- pip
+- pytorch
+- pandas
+- numpy
+- cuda
+- conda
+
+To ensure pip is installed:
+- Open PowerShell
+- cd AppData/Local
+- pip should be in there
+
+Now, we launch the Anaconda PowerShell Prompt (the environment we will be using).
+
+To install cuda, follow the documentation in the following link:
+	https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
+
+Use the following commands to install PyTorch:
+- conda install pytorch torchvision cpuonly -c pytorch
+
+To ensure installations are done:
+- pip show torch (PyTorch)
+- pip show pandas (pandas)
+- pip show numpy (NumPy)
+- nvcc -V (cuda)
+- conda list (conda)
